@@ -37,6 +37,12 @@
   background: rgba(30, 40, 50, 1);
 }
 
+@media (max-width: 768px) {
+  .shop_button {
+    margin-bottom: 35px;
+  }
+}
+
 .shop_icon {
   font-family: "Roboto", sans-serif;
   font-size: 29px;
