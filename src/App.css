@@ -1,0 +1,173 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.bgcolor {
+  background-color: rgb(241 241 241);
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 74px;
+  font-weight: 300;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.desc {
+  font-family: "Roboto", sans-serif;
+  margin-top: 55px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.acenter {
+  align-items: center;
+}
+
+.shop_button {
+  border: none;
+  width: 223px;
+  height: 72px;
+  margin-top: 55px;
+  top: 591px;
+  color: rgba(255, 255, 255, 1);
+  left: 298.45px;
+  background: rgba(30, 40, 50, 1);
+}
+
+.shop_icon {
+  font-family: "Roboto", sans-serif;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.shop_button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.custom-nav-link {
+  color: #000000;
+}
+
+.collection-title {
+  font-family: Roboto;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.collection-description {
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .collection-title {
+    font-size: 2.5rem;
+  }
+
+  .collection-description {
+    font-size: 1.25rem;
+  }
+}
+
+.bgImage {
+  background-image: url("/public/images/andrey-zvyagintsev-EQj1ZMpq_VM-unsplash\ 1.png");
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* footer */
+
+.container8 {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  overflow: auto;
+  font-size: small;
+}
+
+.height {
+  line-height: 100px;
+}
+
+.consuloan {
+  float: left;
+  width: 23%;
+  color: rgb(168, 0, 0);
+}
+.consuloan .fa-solid {
+  color: rgb(13, 185, 13);
+}
+.consuloan a {
+  color: rgb(246, 12, 12);
+  text-decoration: none;
+  line-height: 43px;
+}
+
+.top_footer {
+  font-family: "Open Sans", sans-serif;
+  float: left;
+  width: 21%;
+  line-height: 47px;
+  padding: 25px;
+  color: #292929;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.top_footer h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.top_footer ul {
+  margin-right: 22px;
+}
+
+.top_footer ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: #292929;
+}
+
+.socialmedia a {
+  border: 1px solid rgba(53, 161, 43, 0);
+  font-size: 25px;
+  padding: 0 10px 0 10px;
+  color: white;
+}
