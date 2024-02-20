@@ -5,6 +5,7 @@ import { faShopify } from "@fortawesome/free-brands-svg-icons";
 import Products from "./Products";
 import Zara from "./Zara";
 import TopFooter from "./TopFooter";
+import BottomFooter from "./BottomFooter";
 
 const Home = () => {
   return (
@@ -35,8 +36,9 @@ const Home = () => {
         </Container>
       </Container>
       <Products />
-      {/* <Zara /> */}
+      <Zara />
       <TopFooter />
+      <BottomFooter />
     </div>
   );
 };

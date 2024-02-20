@@ -29,16 +29,16 @@ const Products = () => {
   const Loading = () => {
     return (
       <>
-        <div className="col-md-3">
+        <div className="col-lg-3">
           <Skeleton height={350} />
         </div>
-        <div className="col-md-3">
+        <div className="col-lg-3">
           <Skeleton height={350} />
         </div>
-        <div className="col-md-3">
+        <div className="col-lg-3">
           <Skeleton height={350} />
         </div>
-        <div className="col-md-3">
+        <div className="col-lg-3">
           <Skeleton height={350} />
         </div>
       </>
@@ -96,32 +96,30 @@ const Products = () => {
         </div>
         {filter.map((product) => {
           return (
-            <>
-              <div className="col-md-3 mb-5">
-                <div className="card text-center p-4" key={product.id}>
-                  <img
-                    src={product.image}
-                    className="card-img-top"
-                    alt={product.title}
-                    height="250px"
-                  />
-                </div>
-                <div className="card-body">
-                  <h5 className="card-title mt-2">
-                    {product.title.substring(0, 12)}
-                  </h5>
-                  <div className="d-flex justify-content-between mt-3">
-                    <NavLink
-                      to={`/products/${product.id}`}
-                      className="btn btn-outline-dark btn-sm"
-                    >
-                      Shop Now
-                    </NavLink>
-                    <p className="card-text lead fw-bold">${product.price}</p>
-                  </div>
+            <div className="product-card col-md-6 col-lg-4 col-xxl-3 mb-5" key={product.id}>
+              <div className="card text-center p-4" >
+                <img
+                  src={product.image}
+                  className="card-img-top"
+                  alt={product.title}
+                  height="280px"
+                />
+              </div>
+              <div className="card-body">
+                <h5 className="card-title mt-2">
+                  {product.title.substring(0, 12)}
+                </h5>
+                <div className="d-flex justify-content-between mt-3">
+                  <NavLink
+                    to={`/products/${product.id}`}
+                    className="btn btn-outline-dark btn-sm"
+                  >
+                    Shop Now
+                  </NavLink>
+                  <p className="card-text lead fw-bold">${product.price}</p>
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
       </>

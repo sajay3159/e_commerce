@@ -26,10 +26,6 @@
   text-align: left;
 }
 
-.acenter {
-  align-items: center;
-}
-
 .shop_button {
   border: none;
   width: 223px;
@@ -87,52 +83,94 @@
 }
 
 .bgImage {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  background-color: #0d4913;
   background-image: url("/public/images/andrey-zvyagintsev-EQj1ZMpq_VM-unsplash\ 1.png");
+}
+
+.bgImage::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 33%;
+  height: 100%;
+  background-image: url("/public/images/1024px-Zara_Logo\ 2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  opacity: 0.1;
+}
+
+.collection_button {
+  border: none;
+  width: 223px;
+  height: 72px;
+  margin-top: 55px;
+  top: 591px;
+  color: #000000;
+  left: 298.45px;
+  background: #ffffff;
+}
+
+@media (max-width: 575.98px) {
+  .bgImage {
+    background-position: 19% center;
+  }
+}
+
+/* Small Devices (phones, 576px and up) */
+@media (min-width: 576px) {
+  .bgImage {
+    background-position: 19% center;
+  }
+}
+
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .bgImage {
+    background-position: 19% center;
+  }
+}
+
+/* Large Devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .bgImage {
+    background-position: 19% center;
+  }
+}
+
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .bgImage {
+    background-position: 19% center;
+  }
 }
 
 .description {
   font-family: "Roboto", sans-serif;
   font-size: 26px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 38px;
   letter-spacing: 0em;
   text-align: left;
 }
 
 /* footer */
 
-.container8 {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-  overflow: auto;
-  font-size: small;
-}
-
-.height {
-  line-height: 100px;
-}
-
-.consuloan {
-  float: left;
-  width: 23%;
-  color: rgb(168, 0, 0);
-}
-.consuloan .fa-solid {
-  color: rgb(13, 185, 13);
-}
-.consuloan a {
-  color: rgb(246, 12, 12);
-  text-decoration: none;
-  line-height: 43px;
+.description-footer {
+  line-height: 140%;
+  font-family: "Open Sans", sans-serif;
 }
 
 .top_footer {
   font-family: "Open Sans", sans-serif;
-  float: left;
-  width: 21%;
-  line-height: 47px;
-  padding: 25px;
   color: #292929;
 }
 
@@ -170,4 +208,8 @@ ul {
   font-size: 25px;
   padding: 0 10px 0 10px;
   color: white;
+}
+
+.bottomfooter {
+  background-color: #1e2832;
 }
