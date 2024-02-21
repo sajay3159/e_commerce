@@ -1,7 +1,7 @@
 import Cart from "./component/Cart";
 import Navbar from "./component/Navbar";
 import Home from "./component/Home";
-import Product from "./component/ProductDetail";
+import ProductDetail from "./component/ProductDetail";
 import Products from "./component/Products";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./component/Login";
@@ -24,7 +24,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Registration />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/:id" element={<Product />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<RequiredAuth><Cart /></RequiredAuth>} />
         </Routes>
       </BrowserRouter>
